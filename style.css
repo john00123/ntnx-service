@@ -1,0 +1,121 @@
+/*Note to devs: This is not production code. This is meant to be used as reference for interaction behavior. Use variables and components as much as possible. Please contact PRISM engineering for components and coding best practices.*/
+
+
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	font-family: 'Nutanix Soft', san-serif;
+	font-size: 14px;
+	color: #343536;
+	overflown-x:hidden;
+	background-color:white;
+	margin: 0;
+}
+
+
+.nav, .subnav{
+	width:100%;
+	display:flex;
+	align-items:center;
+	font-size:16px;
+	height:50px;
+	font-weight:600px;
+}
+
+a{
+	color:#22A5F7;
+}
+
+.nav{
+
+
+}
+
+.subnav{
+	background-color:#36D068;
+	color:white;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.container{
+	min-width:340px;
+	max-width:600px;
+	margin:auto;
+	width:60%;
+}
+
+h1{
+	font-size:24px;
+	margin-top:40px;
+	padding-bottom:10px;
+}
+
+p{
+	padding-bottom:20px;
+	line-height:24px;
+}
+
+table {
+	margin: auto;
+	width: 100%;
+	overflow: hidden;
+	border-collapse: collapse;
+	margin-bottom:60px;
+}
+
+tr {
+	height: 50px;
+	border: solid #F9F9FA;
+	border-width: 1px 0px 1px 0px;
+}
+
+tr:hover {
+	cursor: pointer;
+	background-color: #f4fbff;
+	border: solid transparent;
+	border-width: 1px 0px 1px 0px;
+	border-style: double;
+	!important/* Solves overlapping rows issue, without affecting performance*/
+}
+
+tr:focus {
+	cursor: pointer;
+	background-color: #f4fbff;
+	border: solid transparent;
+	border-width: 1px 0px 1px 0px;
+	border-style: double;
+	!important/* Solves overlapping rows issue, without affecting performance*/
+}
+
+td {
+	vertical-align: middle;
+	padding: 10px;
+	/* This is to animate in mouseleave*/
+	transition-property: all;
+	transition-timing-function: cubic-bezier(.57, .02, .41, .91);
+	transition: 0.40s;
+}
+
+td:nth-child(2){
+	text-align:right;
+	color:
+}
+
+td span{
+	color:#36D068;
+	padding-right:5px;
+}
+
+.nav span,.subnav span{
+	min-width:340px;
+	max-width:600px;
+	margin:auto;
+	width:60%;
+	text-align:left;
+}
+
+svg{
+	padding-right:15px;
+
+}
